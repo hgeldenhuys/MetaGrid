@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="MetaGrid.widget.MetaGrid" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>MetaGrid</name>
+    <description>The description of this widget.</description>
+
+    <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAABGdBTUEAALGPC/xhBQAAAWJJREFUKBVj1LUPTGVgYOj+//8/P5AmGjAyMn4EKi5lBBrw4XOQIf8/ER64Zo5Dtxl+2KnC+SAGuhjTmy8MvOvOf2QB2fxPgIvhrzA3XMN/DlYUPkgCQ+zPPwaQXhaQZMjdfwz8b/6BmGBw+u0fBtOrCD5IEF3s48d/DLuA4mADwgM9GZQV5cCaQUTnxLkM2clRcD42sbv3HzHsOnCMgVHHLuC/tbkxAx8PwguXb9xi0NVQQzEAXezTl68MR0+eZWAAGXDy/OX/bz58hOPSxj44GyaOLgbSA9IL9sLFqzcZXr19D7fx9bt3DMfPXITzQQx0secvXoHlmVBUkcEBu0BfWx0lEA8dPcNgaaKPYhy6GCgQQQAaiEbAQEQkpMs3bgMDETUh0S4QgWn6ysr123X4+XnhTr5++w7D1LnL4HwQA13s48fPDCC9jEYOoSp//v/JBaY7ARQdBDjA0P/AwsgyGQCOk/j4uxTwdAAAAABJRU5ErkJggg==
+    </icon>
+
+    <properties>
+        <property key="xpath" type="attribute">
+            <caption>XPath</caption>
+            <category>Data</category>
+            <description>Xpath Source attribute</description>
+            <attributeTypes>
+                <attributeType name="String" />
+            </attributeTypes>
+        </property>
+        <property key="systemColumns" type="attribute" required="false">
+            <caption>Show System Columns</caption>
+            <category>Data</category>
+            <description>Hide or show system columns</description>
+            <attributeTypes>
+                <attributeType name="Boolean" />
+            </attributeTypes>
+        </property>
+
+        <property key="systemColumnsDefault" type="boolean" defaultValue="false">
+            <caption>System Columns Default</caption>
+            <category>Defaults</category>
+            <description>If no Systems Columns Attribute is used, use this value</description>
+        </property>
+        <property key="associations" type="attribute" required="false">
+            <caption>Show Associations</caption>
+            <category>Data</category>
+            <description>Hide or show associations</description>
+            <attributeTypes>
+                <attributeType name="Boolean" />
+            </attributeTypes>
+        </property>
+
+        <property key="associationsDefault" type="boolean" defaultValue="false">
+            <caption>Associations Default</caption>
+            <category>Defaults</category>
+            <description>If no associations is used, use this value</description>
+        </property>
+
+
+        <property key="offset" type="attribute" required="false">
+            <caption>Offset Attribute</caption>
+            <category>Filter</category>
+            <description>The filter offset for your query</description>
+            <attributeTypes>
+                <attributeType name="AutoNumber"/>
+                <attributeType name="Currency"/>
+                <attributeType name="Float"/>
+                <attributeType name="Integer"/>
+                <attributeType name="Long"/>
+            </attributeTypes>
+        </property>
+        <property key="offsetDefault" type="integer" defaultValue="0">
+            <caption>Offset</caption>
+            <category>Defaults</category>
+            <description>The filter offset default for your query</description>
+        </property>
+
+        <property key="limit" type="attribute" required="false">
+            <caption>Limit Attribute</caption>
+            <category>Filter</category>
+            <description>The filter limit for your query</description>
+            <attributeTypes>
+                <attributeType name="AutoNumber"/>
+                <attributeType name="Currency"/>
+                <attributeType name="Float"/>
+                <attributeType name="Integer"/>
+                <attributeType name="Long"/>
+            </attributeTypes>
+        </property>
+        <property key="limitDefault" type="integer" defaultValue="20">
+            <caption>Limit</caption>
+            <category>Defaults</category>
+            <description>The filter limit default for your query</description>
+        </property>
+
+
+        <property key="entityName" type="attribute" required="false">
+            <caption>Entity Name</caption>
+            <category>Override</category>
+            <description>Use entity override to ignore XPath object inference</description>
+            <attributeTypes>
+                <attributeType name="String"/>
+            </attributeTypes>
+        </property>
+
+        <property key="showXPath" type="attribute" required="false">
+            <caption>Show XPath Attribute</caption>
+            <category>Experimental</category>
+            <description>Show XPath</description>
+            <attributeTypes>
+                <attributeType name="Boolean" />
+            </attributeTypes>
+        </property>
+
+        <property key="showXPathDefault" type="boolean" defaultValue="false">
+            <caption>Show XPath</caption>
+            <category>Defaults</category>
+            <description>If no Show XPath attribute is used, use this value</description>
+        </property>
+
+        <property key="showAggregateFooter" type="attribute" required="false">
+            <caption>Show Aggregate Footer Attribute</caption>
+            <category>Footer</category>
+            <description>Show Aggregate Footer</description>
+            <attributeTypes>
+                <attributeType name="Boolean" />
+            </attributeTypes>
+        </property>
+
+        <property key="showAggregateFooterDefault" type="boolean" defaultValue="false">
+            <caption>Show Aggregate Footer</caption>
+            <category>Defaults</category>
+            <description>If no Aggregate Footer attribute is used, use this value</description>
+        </property>
+
+        <property key="pageSize" type="attribute" required="false">
+            <caption>Page Size Attribute</caption>
+            <category>Paging</category>
+            <description>Rows per page</description>
+            <attributeTypes>
+                <attributeType name="Integer" />
+            </attributeTypes>
+        </property>
+
+        <property key="pageSizeDefault" type="integer" defaultValue="5">
+            <caption>Page SIze</caption>
+            <category>Defaults</category>
+            <description>If no Page Size attribute is used, use this value</description>
+        </property>
+
+    </properties>
+</widget>
+

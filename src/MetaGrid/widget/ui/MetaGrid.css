@@ -1,0 +1,244 @@
+th.meta-grid-header {
+    padding: 4px;
+    background-color: #0595db;
+    border: 1px solid black;
+    border-bottom-width: 2px;
+    color: #fff;
+}
+
+.meta-grid-cell {
+    text-align: left;
+}
+
+.meta-grid {
+    width: 100%;
+    overflow: auto;
+    padding: 0;
+}
+
+td.meta-grid-cell {
+    border: 1px solid black;
+    border-bottom-width: 2px;
+}
+
+tr.meta-grid-row.odd td {
+    background-color: #fff;
+}
+
+tr.meta-grid-row.even td {
+    background-color: #f0f0f8;
+}
+
+.meta-grid-date div {
+    width: 162px;
+}
+
+.meta-grid {
+    font-size: 80%;
+    font-family: monospace;
+}
+
+.meta-grid-cell-div {
+    padding: 3px;
+    max-width: 200px;
+    max-height: 50px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.meta-attr-id .meta-grid-cell-div {
+    font-size: 60%;
+    font-weight: bold;
+}
+
+.meta-grid-no-data {
+    color: brown;
+    font-size: 90%;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.meta-grid-empty {
+    color: #1616e8;
+}
+
+a.meta-grid-ref-link {
+    color: #0595db;
+    display: block;
+}
+
+.meta-grid-numeric {
+    text-align: right;
+}
+
+.meta-grid-history-path {
+    display: inline;
+    font-size: 65%;
+    background-color: #0595db;
+    color: #ffffff;
+    padding: 4px;
+    border-radius: 8px 8px 8px 8px;
+    font-family: monospace;
+}
+
+.meta-grid-history {
+    margin-bottom: 6px;
+    display: inline;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+button.meta-grid-refresh-button {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url('MetaGrid/widget/ui/refresh.png') round;
+}
+
+div.MetaGrid {
+    padding: 2px;
+}
+
+.meta-grid-cell-div.String {
+    min-width: 125px;
+}
+
+.meta-grid-xpath {
+    font-family: monospace;
+    font-size: 70%;
+    background-color: black;
+    color: aliceblue;
+    display: block;
+    padding: 2px;
+    word-break: break-word;
+}
+
+button.btn.mx-button.meta-grid-first-button {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url('MetaGrid/widget/ui/first.png') no-repeat 50%;
+}
+
+button.btn.mx-button.meta-grid-previous-button {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url('MetaGrid/widget/ui/previous.png') no-repeat 50%;
+}
+
+button.btn.mx-button.meta-grid-next-button {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url('MetaGrid/widget/ui/next.png') no-repeat 50%;
+}
+
+
+button.btn.mx-button.meta-grid-last-button {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url('MetaGrid/widget/ui/last.png') no-repeat 50%;
+}
+
+.meta-grid-paging {
+    color: #0595db;
+    display: inline;
+    width: 140px;
+}
+
+table.meta-grid-table {
+    margin: 15px 0;
+}
+
+tr.meta-grid-footer.meta-grid-avg td {
+    color: #f59301;
+    background-color: #8699a4;
+}
+
+tr.meta-grid-footer.meta-grid-min td {
+    color: #650d0e;
+    background-color: #8699a4;
+}
+
+tr.meta-grid-footer.meta-grid-max td {
+    color: green;
+    background-color: #8699a4;
+}
+
+tr.meta-grid-footer.meta-grid-sum td {
+    color: #0e1550;
+    background-color: #8699a4;
+}
+
+tr.meta-grid-footer {
+    text-align: center;
+    background-color: #8699a4;
+}
+
+tr.meta-grid-row:hover td {
+    background-color: #f9f3bc;
+}
+
+a.sort-header {
+    color: white;
+    padding: 4px;
+    display: block;
+    width: 100%;
+}
+
+a.sort-header.asc:after {
+    content: ' ▲';
+}
+
+a.sort-header.desc:after {
+    content: ' ▼';
+}
+
+a.sort-header:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.meta-grid-ref-link:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+table.meta-grid-table.single .meta-grid-tbody td.meta-grid-cell {
+    float: right;
+    clear: both;
+    height: 30px;
+    border: 1px solid;
+    padding: 0px;
+    width: 400px;
+}
+
+table.meta-grid-table.single .meta-grid-thead th.meta-grid-header {
+    float: left;
+    clear: both;
+    height: 30px;
+    width: 230px;
+    text-align: right;
+}
+
+table.meta-grid-table.single thead.meta-grid-thead {
+    float: left;
+}
+
+table.meta-grid-table.single tbody.meta-grid-tbody {
+    float: right;
+}
+
+table.meta-grid-table.single .meta-grid-cell-div {
+    padding: 6px;
+    max-width: none;
+}
